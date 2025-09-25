@@ -6814,6 +6814,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1968519095}
+    - targetCorrespondingSourceObject: {fileID: 685976037710134111, guid: a3e713cec1da5804f83e80ee7b886181,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1968519096}
     - targetCorrespondingSourceObject: {fileID: 6233943139052817741, guid: a3e713cec1da5804f83e80ee7b886181,
         type: 3}
       insertIndex: -1
@@ -6869,6 +6873,19 @@ MonoBehaviour:
   shouldActivateOnCollision: 0
   canBeActivated: 1
   target: {fileID: 0}
+--- !u!114 &1968519096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968519093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767068f98f817e94489a2dbd9f7ce2fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!4 &1979399237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
