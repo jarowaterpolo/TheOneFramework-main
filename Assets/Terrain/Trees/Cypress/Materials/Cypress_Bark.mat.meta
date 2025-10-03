@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 668dd324b1d24254d9ea2325f6948c5e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213197
+  packageName: Unity Terrain - URP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_URP/Prefabs/Trees/Cypress/Materials/Cypress_Bark.mat
+  uploadId: 727820

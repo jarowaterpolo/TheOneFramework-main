@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cfc61d091ff985a49830bdb28d3458de
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213197
+  packageName: Unity Terrain - URP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_URP/Prefabs/Trees/Pines/Pine_A/Materials/Pine_A_Bark.mat
+  uploadId: 727820

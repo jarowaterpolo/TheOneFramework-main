@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 82c90b435e0c8f24c973e2717a9c162e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213197
+  packageName: Unity Terrain - URP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_URP/Prefabs/Trees/Conifer/Materials/Conifer_Billboard.mat
+  uploadId: 727820

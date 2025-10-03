@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c991dd68b27f54f45bdf4d63142ac3af
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213197
+  packageName: Unity Terrain - URP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_URP/Prefabs/Trees/Conifer/Materials/Conifer_Branches.mat
+  uploadId: 727820

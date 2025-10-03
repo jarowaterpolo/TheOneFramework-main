@@ -43,11 +43,12 @@ title: Rock
 <<if $quest1 == "OpenRock">>
     <<if $buttonsFound == 1 && $leversFound == 2>>
     Move Rock
-    MoveRock.Move_rock
+        
     <<elseif $buttonsFound == 1 || $leversFound >= 1>>
     find the others you already found {$buttonsFound} button and {$leversFound} levers
     <<else>>
     The rock wont budge maybe if you find levers and buttons and press them in a certain order the rock will move
+    <<play_animation CaveRock MoveRock false>>
     <<endif>>
 <<endif>>
 ===
