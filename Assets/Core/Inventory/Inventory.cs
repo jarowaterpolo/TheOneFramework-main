@@ -4,7 +4,7 @@ using Yarn.Unity;
 
 public class Inventory : MonoBehaviour
 {
-    public int numberOfSlots = 5;
+    public int numberOfSlots = 10;
     private List<InventoryItemDefinition> items = new List<InventoryItemDefinition>();
 
     public delegate void InventoryChanged();
