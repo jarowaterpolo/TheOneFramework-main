@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - SpawnPoint
   - RespawnPlayers
+  - LBPortal
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Water
   - UI
   - ProximityTriggers
-  - 
+  - Player
   - 
   - 
   - 
