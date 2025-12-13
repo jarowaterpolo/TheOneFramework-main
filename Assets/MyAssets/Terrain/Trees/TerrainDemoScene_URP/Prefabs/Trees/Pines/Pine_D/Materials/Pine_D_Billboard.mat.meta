@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad46eb53e16c6074e8bb0fe5ad17e20f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213197
+  packageName: Unity Terrain - URP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_URP/Prefabs/Trees/Pines/Pine_D/Materials/Pine_D_Billboard.mat
+  uploadId: 727820
