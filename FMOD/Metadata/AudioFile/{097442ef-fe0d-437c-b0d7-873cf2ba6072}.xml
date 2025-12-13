@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{097442ef-fe0d-437c-b0d7-873cf2ba6072}">
+		<property name="assetPath">
+			<value>SummonedSFX.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.91129251700680269</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13fa38c9-a79d-45a5-adda-14f5ad5b90cf}</destination>
+		</relationship>
+	</object>
+</objects>

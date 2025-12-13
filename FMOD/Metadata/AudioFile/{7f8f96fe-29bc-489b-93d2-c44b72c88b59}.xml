@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7f8f96fe-29bc-489b-93d2-c44b72c88b59}">
+		<property name="assetPath">
+			<value>CultistBackground.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6923129251700679</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13fa38c9-a79d-45a5-adda-14f5ad5b90cf}</destination>
+		</relationship>
+	</object>
+</objects>
