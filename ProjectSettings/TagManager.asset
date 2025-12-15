@@ -9,6 +9,8 @@ TagManager:
   - RespawnPlayers
   - LBPortal
   - MovingPlatform
+  - WallAudio
+  - TrailDot
   layers:
   - Default
   - TransparentFX

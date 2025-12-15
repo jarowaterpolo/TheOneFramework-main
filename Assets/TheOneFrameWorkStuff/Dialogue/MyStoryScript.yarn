@@ -60,8 +60,10 @@ title: Start
 title: QuestGiver
 ---
 <<if $quest == "Find first QuestGiver">>
+    <<Talk "GameCommands">>
     FirstQuestGiver: Your quest is to gather six Stones, open the cave and put the stones on the altars and reset the world 
     FirstQuestGiver: your first task is to find the Power Stone in the forest
+    <<StopTalk "GameCommands">>
     <<set $CameraMove = 1>>
     <<Camera2On "GameCommands">>
     <<Cutscene "GameCommands" {$CameraMove}>>
@@ -94,6 +96,7 @@ title: QuestGiver
 title: Forrest
 ---
 <<if $ForestGuyAlive == true>>
+    <<Talk "GameCommands">>
     <<if $quest == "Find Power Stone">>
         ForestGuy: I see you want this purple stone but I fairly found it myself so im not gonna give you it for free.
         <<set $quest2 = "Get Power Stone">>
@@ -101,6 +104,7 @@ title: Forrest
         <<if $quest2 == "Get Power Stone">>
             //fight
             ForestGuy: your gonna have to fight me for it
+            <<StopTalk "GameCommands">>
             <<PlayForestBattleMusic "GameCommands">>
             <<set $FightCamMove = 1>>
             <<FightCamOn "GameCommands">>
@@ -116,9 +120,11 @@ title: Forrest
             <<if $FightingStyle == "stealth">>
                 you choose the stealth option and sneaked up behind the enemy whats your next action
                 -> try to hold him hostage
+                    <<Talk "GameCommands">>
                     ForestGuy: you try to sneak up and hold me hostage huh, yeah that doesn't work
                     he puts a knife to your throat   
                     <<FightCamOff "GameCommands">>
+                    <<StopTalk "GameCommands">>
                 -> search for his weak spots
                     you found his weak spots
                     -> hold a dagger to his throat
@@ -136,38 +142,47 @@ title: Forrest
                             whilst luring the enemy in you accidently fell in the trap yourself
                             you got stuck and therefore lost the fight
                             <<FightCamOff "GameCommands">>
+                            <<StopTalk "GameCommands">>
                 -> try to use a piercing arrow
                     the piercing arrow also did nothing and he holds a knife to your neck
-                    therefore you lost the life
+                    therefore you lost the fight
                     <<FightCamOff "GameCommands">>
+                    <<StopTalk "GameCommands">>
 
             <<elseif $FightingStyle == "melee">>
                 you choose the melee option and tried to hold him hostage but he immediatly counter attacked keeping you hostage in an instant 
-                 <<FightCamOff "GameCommands">>
+                <<FightCamOff "GameCommands">>
+                <<StopTalk "GameCommands">>
             <<else>>
                 didn't choose a FightingStyle
             <<endif>>
 
             <<if $ForrestWin == true>>
-             <<FightCamOff "GameCommands">>
-            <<StopForestBattleMusic "GameCommands">>
-            ForestGuy: what did you do......
-            ForestGuy gives up and drops his items including the stone which you pickup
-            <<give_item "Player" "PowerStone">>
-            <<set $quest2 = "">>
-            <<set $quest to "Find Space Stone">>
-            he tells you that if your gonna go through with you plan the next stone will be located in space
-            and that you could maybe lend the rocket of the guy on the north of the island
-            <<set $CameraMove = 2>>
-            <<Camera2On "GameCommands">>
-            <<Cutscene "GameCommands" {$CameraMove}>>
+                <<FightCamOff "GameCommands">>
+                <<StopForestBattleMusic "GameCommands">>
+                <<Talk "GameCommands">>
+                ForestGuy: what did you do......
+                <<StopTalk "GameCommands">>
+                ForestGuy gives up and drops his items including the stone which you pickup
+                <<give_item "Player" "PowerStone">>
+                <<set $quest2 = "">>
+                <<set $quest to "Find Space Stone">>
+                he tells you that if your gonna go through with you plan the next stone will be located in space
+                and that you could maybe lend the rocket of the guy on the north of the island
+                <<set $CameraMove = 2>>
+                <<Camera2On "GameCommands">>
+                <<Cutscene "GameCommands" {$CameraMove}>>
             <<else>>
-            ForestGuy: Sorry you didnt win so no stone for you
+                <<Talk "GameCommands">>
+                ForestGuy: Sorry you didnt win so no stone for you
+                <<StopTalk "GameCommands">>
             <<endif>>
         <<endif>>
 
     <<else>>
-    ForestGuy: your not searching for the Power Stone yet first find the questgiver in the middle of this island on the mountain    
+        <<Talk "GameCommands">>
+        ForestGuy: your not searching for the Power Stone yet first find the questgiver in the middle of this island on the mountain    
+        <<StopTalk "GameCommands">>
     <<endif>>
 <<else>>
     ...
@@ -177,13 +192,16 @@ title: Forrest
 title: Rocket
 ---
 <<if $quest == "Find Space Stone">>
+    <<Talk "GameCommands">>
     <<if $quest2 == "">>
         RocketGuy: Ill lend ya my rocket to save the world as long as ya gimme some credit
         <<set $quest2 = "To Space">>
+        <<StopTalk "GameCommands">>
     <<elseif $quest2 == "Return From Space">>
         <<if $MadRocketGuy == false>>
             RocketGuy: thx for bringing my rocket back and glad you found the stone with my help.
             RocketGuy: The next one your probably searching for south west of the island just be carefull not to get abducted...
+            <<StopTalk "GameCommands">>
             <<set $TP_Active = true>>
             <<set $quest = "Find Reality Stone">>
             <<set $quest2 = "">>
@@ -196,6 +214,7 @@ title: Rocket
             RocketGuy: luckily you also found what you were looking for over there otherwise it would have been a waste of fuel
             RocketGuy: next time you wanna lend it just ask me first 
             RocketGuy: the next one your probably searching for south west of the island just be carefull not to get abducted...
+            <<StopTalk "GameCommands">>
             <<set $TP_Active = true>>
             <<set $quest = "Find Reality Stone">>
             <<set $quest2 = "">>
@@ -210,38 +229,55 @@ title: Rocket
             RocketGuy: atleast you brougth it back safely
             RocketGuy: you did waste my fuel tho are ya gonna pay for that or what?
             RocketGuy: next time you wanna lend it just ask me first 
+            <<StopTalk "GameCommands">>
         <<else>>
-        ...
+        RocketGuy: did you talk to the star when you got the stone?
         <<endif>>
     <<endif>>
 <<else>>
-RocketGuy: your not searching for the Space Stone yet first find the ForestGuy in the Forest of this island    
+    RocketGuy: your not searching for the Space Stone yet first find the ForestGuy in the Forest of this island
+    <<StopTalk "GameCommands">>
 <<endif>>
 ===
 title: Space
 ---
 <<if $quest == "Find Space Stone">>
+    <<Talk "GameCommands">>
     <<if $quest2 == "To Space">>
         TalkingStar: Welcome in this galatic paradise ill try and guide ya to what your searching for and then to the way back
         TalkingStar: ill show ya wich directions you can go in
+        TalkingStar: here have this map that shows you where you have been
+        <<give_item "Player" "MazeMap">>
+        <<StopTalk "GameCommands">>
     <<set $quest2 = "Get Space Stone">>
     <<elseif $quest2 == "Get Space Stone">>
         <<if has_item("Player", "SpaceStone")>>
+            <<Talk "GameCommands">>
             TalkingStar: Yayyy you got the Space Stone now try and get back to the rocket
+            <<StopTalk "GameCommands">>
+            <<take_item "Player" "MazeMap">>
         <<set $quest2 = "Return From Space">>
         <<else>>
+            <<Talk "GameCommands">>
             TalkingStar: try to find and get the Space Stone
+            <<StopTalk "GameCommands">>
         <<endif>>
     <<elseif $quest2 == "Return From Space">>
+        <<Talk "GameCommands">>
         TalkingStar: try and get back to the rocket
+        <<StopTalk "GameCommands">>
     <<else>>
+        <<Talk "GameCommands">>
         TalkingStar: did you even talk to the owner of the Rocket you just came here with?
         TalkingStar: I dont think he will be happy when you return but oh well
+        <<StopTalk "GameCommands">>
         <<set $MadRocketGuy = true>>
         <<set $quest2 = "Get Space Stone">>
     <<endif>>
 <<else>>
+    <<Talk "GameCommands">>
     TalkingStar: I dont think your supposed to be here yet
+    <<StopTalk "GameCommands">>
 <<endif>>
 ===
 //M3
@@ -263,6 +299,7 @@ title: Summoned
 <<Summoned "GameCommands">>
 <<wait 1>>
 <<PlayCultMusic "GameCommands">>
+<<Talk "GameCommands">>
 OtherWorldyVoice: hahaha we got you now...
 OtherWorldyVoice: Hi lost one we have something you want to posses yourself if you find the lying cultist you can have it otherwise you will be executed.
 Cultist1: 2 isnt lying
@@ -285,30 +322,41 @@ Cultist5: there is a liar amoungst 1,2 and 4
 <<set $CultistText = "there is a liar amoungst 1,2 and 4">>
 <<SetCultistTexts "GameCommands" "4" "{$CultistText}">>
 
+<<StopTalk "GameCommands">>
+
 <<give_item "Player" "CultPaper">>
 
 <<set $quest2 = "Get Reality Stone and back to the main island">>
 ===
 title: Cultist1
 ---
+<<Talk "GameCommands">>
 Sorry but I wasn't lying...
+<<StopTalk "GameCommands">>
 ===
 title: Cultist2
 ---
+<<Talk "GameCommands">>
 Sorry but I wasn't lying...
+<<StopTalk "GameCommands">>
 ===
 title: Cultist3
 ---
+<<Talk "GameCommands">>
 Sorry but I wasn't lying...
+<<StopTalk "GameCommands">>
 ===
 title: Cultist4
 ---
 // 2 is lying
 <<StopCultMusic "GameCommands">>
 <<wait 1>>
+<<Talk "GameCommands">>
 TheLyingCultist: Congrats you found me, here is your well earned stone we will send ya back
 <<give_item "Player" "RealityStone">>
 TheLyingCultist: The next one you will be looking for is not much to the west at the old bridge
+<<StopTalk "GameCommands">>
+<<take_item "Player" "CultPaper">>
 <<set $quest = "Find Soul Stone">>
 <<set $quest2 = "">>
 <<set $CameraMove = 4>>
@@ -317,19 +365,24 @@ TheLyingCultist: The next one you will be looking for is not much to the west at
 ===
 title: Cultist5
 ---
+<<Talk "GameCommands">>
 Sorry but I wasn't lying...
+<<StopTalk "GameCommands">>
 ===
 //M4
 title: Bridge
 ---
 <<if $quest == "Find Soul Stone">>
+    <<Talk "GameCommands">>
     <<if $quest2 == "">>
         BridgeGuy: I saw something shiny over there maybe you could jump on the bridge and make it over safely
+        <<StopTalk "GameCommands">>
         <<set $quest2 = "Get Soul Stone">>
     <<elseif $quest2 == "Get Soul Stone">>
         BridgeGuy: Lets see if you got the stone
         <<if has_item("Player", "SoulStone")>>
             BridgeGuy: you got it, good job there should be another stone on the oposite side of the island
+            <<StopTalk "GameCommands">>
             <<set $quest = "Find Time Stone">>
             <<set $quest2 = "">>
             <<set $CameraMove = 5>>
@@ -339,19 +392,23 @@ title: Bridge
     <<endif>>
 <<else>>
     BridgeGuy: your not searching for the Soul Stone yet first find the RealityStone somewhere on this island if its even here
-    BridgeGuy: if you cant find it try talking to the FirstQuestGiver or RocketGuy again   
+    BridgeGuy: if you cant find it try talking to the FirstQuestGiver or RocketGuy again  
+    <<StopTalk "GameCommands">> 
 <<endif>>
 ===
 //M5
 title: Pipe
 ---
 <<if $quest == "Find Time Stone">>
+    <<Talk "GameCommands">>
     <<if $quest2 == "">>
         PipeGuy: if you go in this pipe please be fast because it keeps getting hotter over there
+        <<StopTalk "GameCommands">>
     <<elseif $quest2 == "Quickly get the Time Stone and outa there">>
         <<if has_item("Player", "TimeStone")>>
         PipeGuy: Ohhh nice you got the stone without getting melted. 
         PipeGuy: I think you may be able to find the last stone in the cave inside the mountain you spawned on.
+        <<StopTalk "GameCommands">>
         <<set $quest = "Find Mind Stone">>
         <<set $quest2 = "">>
         <<set $CameraMove = 6>>
@@ -362,6 +419,7 @@ title: Pipe
 <<else>>
     PipeGuy: your not searching for the Time Stone yet first find the Soul Stone on the West side of this island 
     PipeGuy: if you cant find it try talking to the bridge guy again    
+    <<StopTalk "GameCommands">>
 <<endif>>
 ===
 title: InnerThoughts
@@ -374,31 +432,41 @@ you also notice its getting hotter but didnt see why until you looked down and s
 title: Rock
 ---
 <<if $quest == "Find Mind Stone">>
+    <<Talk "GameCommands">>
+    <<give_item "Player" "CaveOpenerMap">>
     <<set $quest2 = "Open Cave">>
     <<if $quest2 == "Open Cave">>
-        <<if $buttonsFound == 1 && $leversFound == 2>>
+        <<if $buttonsFound == 1 && $leversFound == 3>>
         CaveGuy: Wait how did you do that? Good job tho now go and grab the last stone and put everything onto the altar to reset this ruined world
+        <<StopTalk "GameCommands">>
+        <<take_item "Player" "CaveOpenerMap">>
         <<elseif $buttonsFound == 1 || $leversFound >= 1>>
             <<if $buttonsFound == 1>>
                 <<if $leversFound > 1 || $leversFound == 0>>
                 CaveGuy: find the others you already found {$buttonsFound} button and {$leversFound} levers
+                <<StopTalk "GameCommands">>
                 <<else>>
                 CaveGuy: find the others you already found {$buttonsFound} button and {$leversFound} lever
+                <<StopTalk "GameCommands">>
                 <<endif>>
             <<else>>
                 <<if $leversFound > 1 || $leversFound == 0>>
                 CaveGuy: find the others you already found {$buttonsFound} buttons and {$leversFound} levers
+                <<StopTalk "GameCommands">>
                 <<else>>
                 CaveGuy: find the others you already found {$buttonsFound} buttons and {$leversFound} lever
+                <<StopTalk "GameCommands">>
                 <<endif>>
             <<endif>>
         <<else>>
         CaveGuy: I think there is something in there. I just can't find a way to get in.
         CaveGuy: The rock wont budge maybe if you find levers and buttons and press them the rock will move
+        <<StopTalk "GameCommands">>
         <<endif>>
     <<endif>>
 <<else>>
-    CaveGuy: you do not have 5 stones yet try coming back later when you have aquired those    
+    CaveGuy: you do not have 5 stones yet try coming back later when you have aquired those  
+    <<StopTalk "GameCommands">>  
 <<endif>>
 ===
 title: Altars

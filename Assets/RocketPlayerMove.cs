@@ -17,6 +17,7 @@ public class RocketPlayerMove : PlayerActivatable
                 Player.transform.position = new Vector3(5, 100, 3600);
                 ToSpaceOrBack++;
                 StarMovement.InSpace = true;
+                StarMovement.InRocketArea = false;
             }
             else if(ToSpaceOrBack >= 1)
             {
@@ -25,6 +26,21 @@ public class RocketPlayerMove : PlayerActivatable
                 ToSpaceOrBack = 0;
             }
             cc.enabled = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            StarMovement.InRocketArea = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            StarMovement.InRocketArea = false;
         }
     }
 }

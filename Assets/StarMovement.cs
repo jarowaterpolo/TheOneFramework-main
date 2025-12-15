@@ -4,6 +4,8 @@ using UnityEngine;
 public class StarMovement : MonoBehaviour
 {
     public static bool InSpace = false;
+    public static bool InRocketArea = false;
+
     public Transform playerTransform;
     private Vector3 TargetPos;
 
@@ -41,7 +43,7 @@ public class StarMovement : MonoBehaviour
     {
         TargetPos = playerTransform.position;
 
-        if (InSpace == true) 
+        if (InSpace == true && InRocketArea == false) 
         { 
             transform.position = TargetPos + new Vector3(0, 1.5f, 0) - transform.forward * StarForwardOffset;
 

@@ -38,6 +38,10 @@ public class GameCommands : MonoBehaviour
     //Player
     public GameObject Player;
 
+    //NPC Sounds
+    public AudioSource[] NPC_Sounds;
+    public int TalkStarted;
+
     //Unity Event
     [Space]
     [SerializeField] private UnityEvent MoveRock;
@@ -249,7 +253,27 @@ public class GameCommands : MonoBehaviour
     {
         CultMusic.Stop();
     }
+    [YarnCommand("Talk")]
+    public void Talking()
+    {
+        TalkStarted = Random.Range(0, NPC_Sounds.Length);
+        NPC_Sounds[TalkStarted].Play();
+    }
+    [YarnCommand("StopTalk")]
+    public void StopTalking()
+    {
+        NPC_Sounds[TalkStarted].Stop();
+    }
 
+    public void DestroyTrailDots()
+    {
+        GameObject[] TrailDots = GameObject.FindGameObjectsWithTag("TrailDot");
+
+        foreach (GameObject dot in TrailDots)
+        {
+            Destroy(dot);
+        }
+    }
     public void DevCheats()
     {
         switch (DevCheatsNum)
