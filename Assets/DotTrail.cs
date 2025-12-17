@@ -30,7 +30,7 @@ public class DotTrail : MonoBehaviour
     void Update()
     {
         //SpawnPos = Player.transform.position + new Vector3(0,3645 + 50, -150);
-        SpawnPos = Vector3.zero + new Vector3(0, .5f, 0) + Player.transform.position;
+        SpawnPos = Vector3.zero + new Vector3(0, .1f, 0) + Player.transform.position;
 
         Timer += Time.deltaTime;
 

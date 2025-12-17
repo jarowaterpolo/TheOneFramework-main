@@ -303,6 +303,7 @@ title: Summoned
 OtherWorldyVoice: hahaha we got you now...
 OtherWorldyVoice: Hi lost one we have something you want to posses yourself if you find the lying cultist you can have it otherwise you will be executed.
 Cultist1: 2 isnt lying
+// <<say "Cult1Head" "2 isnt lying">>
 <<set $CultistText = "2 isnt lying">>
 <<SetCultistTexts "GameCommands" "0" "{$CultistText}">>
 
@@ -325,6 +326,7 @@ Cultist5: there is a liar amoungst 1,2 and 4
 <<StopTalk "GameCommands">>
 
 <<give_item "Player" "CultPaper">>
+OtherWorldyVoice: here I gave you a note which repeats what we said
 
 <<set $quest2 = "Get Reality Stone and back to the main island">>
 ===

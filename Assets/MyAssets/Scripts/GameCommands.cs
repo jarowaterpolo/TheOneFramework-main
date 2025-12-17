@@ -274,6 +274,7 @@ public class GameCommands : MonoBehaviour
             Destroy(dot);
         }
     }
+
     public void DevCheats()
     {
         switch (DevCheatsNum)
