@@ -1615,6 +1615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -4110,6 +4115,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist2
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5581,7 +5591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 87129851}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6825,6 +6835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist1
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7796,6 +7811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -9380,6 +9400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProximityTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10661,7 +10686,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -10778,104 +10803,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
---- !u!1001 &352620135
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 426215749}
-    m_Modifications:
-    - target: {fileID: 2070925441746177671, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerFollowCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177671, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.497
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 36.794
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.819
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: Priority.Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: Priority.m_Value
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_LegacyPriority
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8,
-        type: 3}
-      propertyPath: m_StreamingVersion
-      value: 20241001
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
 --- !u!43 &357930943
 Mesh:
   m_ObjectHideFlags: 0
@@ -11223,6 +11150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -12259,11 +12191,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2782652958767744334, guid: 6247006c163ba7641a67cfa480bae541,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8337547126384692904, guid: 6247006c163ba7641a67cfa480bae541,
         type: 3}
@@ -13737,6 +13664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist3
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14516,7 +14448,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 561563990}
   - {fileID: 1405359985}
   - {fileID: 411703324}
   - {fileID: 642755122}
@@ -14539,6 +14470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -15937,12 +15873,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537505649}
   m_CullTransparentMesh: 1
---- !u!4 &561563990 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
-    type: 3}
-  m_PrefabInstance: {fileID: 352620135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &564729577
 Mesh:
   m_ObjectHideFlags: 0
@@ -16120,7 +16050,7 @@ GameObject:
   - component: {fileID: 567099279}
   - component: {fileID: 567099278}
   - component: {fileID: 567099277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MazeMapCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16567,6 +16497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -17946,6 +17881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RocketGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18885,12 +18825,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8731341706701650633, guid: 7074df04d8ac84886bcb48a7682e68bb,
     type: 3}
   m_PrefabInstance: {fileID: 5603209865621528293}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &671003538 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-    type: 3}
-  m_PrefabInstance: {fileID: 989901363690558260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &673018373
 GameObject:
@@ -20344,6 +20278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -24066,6 +24005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstQuestGiver
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24870,7 +24814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 861260843}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25276,7 +25220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906158089}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cult1Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25483,7 +25427,7 @@ GameObject:
   - component: {fileID: 908790151}
   - component: {fileID: 908790150}
   - component: {fileID: 908790149}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: StarP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25677,6 +25621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -26392,6 +26341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProximityTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26632,7 +26586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989521872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27641,7 +27595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1077973210}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27959,6 +27913,7 @@ MonoBehaviour:
   MazeDotCanvas: {fileID: 567099276}
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
+  Dots: []
 --- !u!43 &1121904106
 Mesh:
   m_ObjectHideFlags: 0
@@ -28795,6 +28750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProximityTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29545,6 +29505,7 @@ MonoBehaviour:
   MazeDotCanvas: {fileID: 567099276}
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
+  Dots: []
 --- !u!1 &1202123757
 GameObject:
   m_ObjectHideFlags: 0
@@ -31856,6 +31817,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist4
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32856,6 +32822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -34889,6 +34860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForrestGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
@@ -37253,6 +37229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BridgeGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38207,7 +38188,7 @@ PrefabInstance:
     - target: {fileID: 2070925441746177671, guid: a1a802ecaf6775746bb2a929fb554ad8,
         type: 3}
       propertyPath: m_Name
-      value: PlayerFollowCamera (1)
+      value: PlayerFollowCamera
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
         type: 3}
@@ -39179,7 +39160,6 @@ Transform:
   - {fileID: 1377018250}
   - {fileID: 407255643}
   - {fileID: 567099276}
-  - {fileID: 671003538}
   m_Father: {fileID: 1834668874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1467080318
@@ -39590,7 +39570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532377967}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39765,6 +39745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProximityTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
@@ -39975,7 +39960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1560818485}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41732,6 +41717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cultist5
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42757,6 +42747,7 @@ MonoBehaviour:
   MazeDotCanvas: {fileID: 567099276}
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
+  Dots: []
 --- !u!1 &1661757659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6292654871758200820, guid: b4ebfe3d8ab4def429989cd25349eb90,
@@ -42797,7 +42788,7 @@ GameObject:
   - component: {fileID: 1671968429}
   - component: {fileID: 1671968428}
   - component: {fileID: 1671968427}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: StarP3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44922,6 +44913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
@@ -47167,6 +47163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PipeGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 5859219442588144092, guid: 42786792db9584cf7ab336e93cea908b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894378835763829303, guid: 42786792db9584cf7ab336e93cea908b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48168,6 +48169,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProximityTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8371298648736569978, guid: de99310b7dc304d4bbbb9e635a3542de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8990621112163952469, guid: de99310b7dc304d4bbbb9e635a3542de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48581,7 +48587,7 @@ GameObject:
   - component: {fileID: 1917450143}
   - component: {fileID: 1917450142}
   - component: {fileID: 1917450141}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: StarP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50206,7 +50212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1975679559}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51140,7 +51146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043321197}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51653,7 +51659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2115512836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52064,7 +52070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141985122}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NPCHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52262,124 +52268,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1193305994}
   m_SourcePrefab: {fileID: 100100000, guid: 754ebf723f61d7d46ad443c869c02338, type: 3}
---- !u!1001 &989901363690558260
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1462409834}
-    m_Modifications:
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112713557250158396, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315,
-        type: 3}
-      propertyPath: m_Name
-      value: MazeTrailDot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
 --- !u!1001 &1541143682881846264
 PrefabInstance:
   m_ObjectHideFlags: 0

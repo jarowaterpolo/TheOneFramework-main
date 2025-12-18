@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5673385216795129948}
   - component: {fileID: 6080940491052920665}
   - component: {fileID: 2025487939056919819}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: LeverDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 2711839288102319452}
   - component: {fileID: 6227582372210051327}
   - component: {fileID: 1666303791082275410}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
