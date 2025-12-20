@@ -24,6 +24,10 @@ public class DotTrail : MonoBehaviour
     //dots itself
     public List<GameObject> Dots;
 
+    //dot count for a max
+    public int MaxDotCount = 100;
+    private int DotCount;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,8 +46,12 @@ public class DotTrail : MonoBehaviour
         {
             if (Timer > DotSpawnDelay)
             {
-                Debug.Log("Spawn Dot");
-                Instantiate(Dot, SpawnPos, Quaternion.Euler(90, 0, 0), MazeDotCanvas);
+                if (DotCount < MaxDotCount)
+                {
+                    Debug.Log("Spawn Dot");
+                    Instantiate(Dot, SpawnPos, Quaternion.Euler(90, 0, 0), MazeDotCanvas);
+                    DotCount++;
+                }
                 GetAllDots();
                 Timer = 0;
             }

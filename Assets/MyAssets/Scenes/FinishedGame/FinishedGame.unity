@@ -93,8 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: ed6cefb2394664e489a3a9758de88dec,
-    type: 2}
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -9070,17 +9069,17 @@ RectTransform:
   m_GameObject: {fileID: 175534024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 531905545}
   - {fileID: 1575864678}
   - {fileID: 1782850937}
   m_Father: {fileID: 1475664283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 300, y: -200}
   m_SizeDelta: {x: 1200, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175534026
@@ -21309,7 +21308,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -21752,15 +21751,15 @@ RectTransform:
   m_GameObject: {fileID: 797948165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 908680396}
   m_Father: {fileID: 1254773870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -400}
+  m_AnchoredPosition: {x: 400, y: -300}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797948167
@@ -26644,7 +26643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 600, y: 350}
+  m_AnchoredPosition: {x: 550, y: 300}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &999575657
@@ -27914,6 +27913,7 @@ MonoBehaviour:
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
   Dots: []
+  MaxDotCount: 100
 --- !u!43 &1121904106
 Mesh:
   m_ObjectHideFlags: 0
@@ -29506,6 +29506,7 @@ MonoBehaviour:
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
   Dots: []
+  MaxDotCount: 100
 --- !u!1 &1202123757
 GameObject:
   m_ObjectHideFlags: 0
@@ -30614,8 +30615,8 @@ RectTransform:
   m_GameObject: {fileID: 1254773869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1272006389}
   - {fileID: 1936763751}
@@ -30624,9 +30625,9 @@ RectTransform:
   - {fileID: 797948166}
   m_Father: {fileID: 1475664283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 300, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1264745489
@@ -42748,6 +42749,7 @@ MonoBehaviour:
   Dot: {fileID: 2228672155218258178, guid: cdc3ef483486e1146909d5b5b9fbd315, type: 3}
   StarDot: {fileID: 985746772}
   Dots: []
+  MaxDotCount: 100
 --- !u!1 &1661757659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6292654871758200820, guid: b4ebfe3d8ab4def429989cd25349eb90,
@@ -43099,7 +43101,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
